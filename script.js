@@ -38,3 +38,34 @@ accordionItems.forEach((item) => {
 		arrow.style.transform = isExpanded ? "rotate(0deg)" : "rotate(180deg)";
 	});
 });
+
+
+const swiperWrapper = document.querySelector(".swiper-wrapper");
+const prevBtn = document.querySelector(".btn-prev");
+const nextBtn = document.querySelector(".btn-next");
+const cardWidth = document.querySelector(".swiper-slide").offsetWidth;
+const cardMarginRight = parseInt(window.getComputedStyle(document.querySelector(".swiper-slide")).marginRight);
+
+let currentIndex = 0;
+
+function updateSliderPosition() {
+	const newPosition = -1 * (currentIndex * (cardWidth + cardMarginRight));
+	swiperWrapper.style.transform = `translateX(${newPosition}px)`;
+}
+
+function showNextCard() {
+	if (currentIndex < swiperWrapper.children.length - 2) {
+		currentIndex++;
+		updateSliderPosition();
+	}
+}
+
+function showPrevCard() {
+	if (currentIndex > 0) {
+		currentIndex--;
+		updateSliderPosition();
+	}
+}
+
+nextBtn.addEventListener("click", showNextCard);
+prevBtn.addEventListener("click", showPrevCard);

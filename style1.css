@@ -265,7 +265,7 @@ header .wrapper {
 	font-size: 1.125rem;
 	font-family: Roboto;
 	font-weight: 400;
-	word-wrap: break-word
+	word-wrap: break-word;
 }
 
 .DM-Btn:hover .rounded-arrow {
@@ -409,7 +409,7 @@ header .wrapper {
 	font-family: Lora;
 	font-weight: 400;
 	line-height: 12.412vw;
-	word-wrap: break-word
+	word-wrap: break-word;
 }
 
 .why-social-text {
@@ -418,7 +418,7 @@ header .wrapper {
 	font-family: Roboto;
 	font-weight: 400;
 	line-height: 5.172vw;
-	word-wrap: break-word
+	word-wrap: break-word;
 }
 
 .acc-item,
@@ -463,47 +463,411 @@ header .wrapper {
 	content: url('./img/rounded-arrow-down-dark.svg');
 }
 
+.V-Btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.7rem;
+}
 
+.V-Btn.text {
+	color: #004E56;
+	font-size: 1.125rem;
+	font-family: Roboto;
+	font-weight: 400;
+	word-wrap: break-word;
+}
 
+.V-Btn:hover .rounded-arrow {
+	content: url('./img/rounded-arrow-light.svg');
+}
 
+.V-Btn:hover .V-Btn.text {
+	color: #EEFDFF;
+}
 
+.how-we-help {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	padding: 1rem;
+}
 
+.how-we-help-text {
+	color: #5F949A;
+	font-size: 12.40px;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 15.13px;
+	word-wrap: break-word;
+}
 
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	gap: 2rem;
+}
 
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2rem;
+	border-radius: 6.89px;
+	width: 387px;
+	height: 306px;
+	background-color: #add1d4;
+	padding: 1rem;
+}
 
+.card>img {
+	width: 4rem;
+	height: 6rem;
+}
 
+.card-title {
+	color: #004E56;
+	font-size: 19.29px;
+	font-family: Lora;
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 23.53px;
+	word-wrap: break-word;
+}
 
+.card-text {
+	color: #5F949A;
+	font-size: 12.40px;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 15.13px;
+	word-wrap: break-word;
+}
 
+.HWH-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	gap: 3rem;
+}
 
+.HWH-wrapper .BS-Btn {
+	display: none;
+}
 
+.about-hypnosis {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	padding: 1rem;
+}
 
+.about-hypnosis-text {
+	color: #004E56;
+	font-size: 12.40px;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 15.13px;
+	word-wrap: break-word;
+}
 
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	width: 100%;
+}
 
+.grid-cell {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 0.7rem;
+}
 
+.grid-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.grid-cell:nth-child(2) {
+	grid-row: 2;
+	grid-column: 1;
+}
 
+.grid-image:hover img {
+	content: url('./img/group-image-1.svg');
+}
 
+.grid-cell-title {
+	color: #004E56;
+	font-size: 16.53px;
+	font-family: Lora;
+	font-weight: 500;
+	line-height: 24.80px;
+	word-wrap: break-word;
+}
 
+.grid-cell-text {
+	color: #5F949A;
+	font-size: 12.40px;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 15.13px;
+	word-wrap: break-word;
+}
 
+.resources {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	background-color: #004E56;
+	padding: 2rem 1rem;
+}
 
+.resources-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
 
+.resources-title {
+	color: #EEFDFF;
+	font-size: 33.07px;
+	font-family: Lora;
+	font-weight: 400;
+	line-height: 40.34px;
+	word-wrap: break-word;
+}
 
+.resources-text {
+	color: #EEFDFF;
+	font-size: 13.78px;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 16.81px;
+	word-wrap: break-word;
+	text-align: center;
+}
 
+.rec {
+	width: 66px;
+	height: 64px;
+	background-color: #EEFDFF;
+	border-radius: 6.89px
+}
 
+.swiper-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
 
+.swiper-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	transition: transform 0.3s ease-in-out;
+}
 
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2rem;
+	border-radius: 6.89px;
+	width: 418px;
+	height: 306px;
+	background-color: #6da4aa;
+	padding: 1rem;
+}
 
+.swiper-slide-title {
+	color: #EEFDFF;
+	font-size: 17.90px;
+	font-family: Lora;
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 21.84px;
+	word-wrap: break-word;
+}
 
+.swiper-slide-text {
+	color: #EEFDFF;
+	font-size: 12.78px;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 15.60px;
+	word-wrap: break-word;
+}
 
+.swiper-slide .DM-Btn.text {
+	color: #EEFDFF;
+	font-size: 20px;
+	font-family: Roboto;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 24.40px;
+	word-wrap: break-word;
+}
 
+.swiper-slide .DM-Btn:hover .rounded-arrow {
+	content: url('./img/rounded-arrow-dark-slider.svg');
+}
 
+.swiper-container button {
+	background-color: transparent;
+	margin-right: 1rem;
+}
 
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	background-color: #add1d4;
+	padding: 4rem;
+	text-align: center;
+}
 
+.footer-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
 
+.footer-header-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
 
+.footer-logo {
+	position: relative;
+}
 
+.footer-logo:before {
+	content: url('./img/Group-white.svg');
+	position: absolute;
+	left: -1.1rem;
+	top: -0.9rem;
+}
 
+.footer-logo-text-1 {
+	color: #004E56;
+	font-size: 22.04px;
+	font-family: Italiana;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 22.04px;
+	word-wrap: break-word;
+}
 
+.footer-logo-text-2 {
+	color: #EEFDFF;
+	font-size: 22.04px;
+	font-family: Italiana;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 22.04px;
+	word-wrap: break-word;
+}
+
+.line-h-dark {
+	width: 90%;
+}
+
+.overlap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.overlap .text {
+	color: #004E56;
+	font-size: 12.40px;
+	font-family: Lora;
+	font-weight: 400;
+	line-height: 41.33px;
+	word-wrap: break-word;
+}
+
+.footer-title {
+	color: #004E56;
+	font-size: 33.07px;
+	font-family: Lora;
+	font-weight: 400;
+	line-height: 41.33px;
+	word-wrap: break-word;
+}
+
+.footer-BS-Btn {
+	display: flex;
+	width: 7.4rem;
+	height: 2.2rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.75rem 0rem;
+	border: 1.83px #004E56 solid;
+	background-color: transparent;
+}
+
+.footer-BS-Btn .text {
+	color: #004E56;
+	font-size: 16.46px;
+	font-family: Lora;
+	font-weight: 600;
+	line-height: 54.87px;
+	word-wrap: break-word;
+}
+
+.footer-subtitle {
+	color: #004E56;
+	font-size: 16.53px;
+	font-family: Lora;
+	font-weight: 600;
+	line-height: 24.80px;
+	word-wrap: break-word;
+	padding-bottom: 1rem;
+}
+
+.footer-text {
+	color: #5F949A;
+	font-size: 13.78px;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 20.67px;
+	word-wrap: break-word;
+}
 
 @media only screen and (min-width: 991px) {
 	.navbar {
@@ -581,6 +945,79 @@ header .wrapper {
 
 	.acc-item-text.active {
 		height: 5.081vw;
+	}
+
+	.how-we-help {
+		align-items: flex-start;
+		padding: 4rem;
+	}
+
+	.HWH-wrapper .BS-Btn {
+		display: flex;
+	}
+
+	.cards {
+		flex-direction: row;
+	}
+
+	.cards .BS-Btn {
+		display: none;
+	}
+
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.grid-image {
+		grid-row: span 2;
+		grid-column: span 2;
+	}
+
+	.about-hypnosis {
+		padding: 3rem;
+	}
+
+	.resources {
+		flex-direction: row;
+		padding-top: 4rem;
+	}
+
+	.resources-wrapper {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2rem;
+	}
+
+	.resources-text {
+		text-align: start;
+	}
+
+	.swiper-wrapper {
+		flex-direction: row;
+		gap: 0;
+	}
+
+	.swiper-slide {
+		margin-right: 1.5rem;
+	}
+
+	.swiper-container {
+		align-items: flex-start;
+	}
+
+	.footer-wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.footer-header-wrapper {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		grid-column: 3;
 	}
 }
 
