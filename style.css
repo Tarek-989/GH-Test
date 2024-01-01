@@ -314,7 +314,7 @@ header .wrapper {
 	height: 14vw;
 	border-radius: 5.7vw 0 5.7vw 0;
 	background-color: #add1d4;
-	background-image: url('./img/image-1.png');
+	background-image: url('./img/image-1.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -348,17 +348,17 @@ header .wrapper {
 
 .box:nth-child(2) .rectangle {
 	border-radius: 0 5.7vw 0 5.7vw;
-	background-image: url('./img/image-2.png');
+	background-image: url('./img/image-2.webp');
 }
 
 .box:nth-child(3) .rectangle {
 	border-radius: 0 5.7vw 0 5.7vw;
-	background-image: url('./img/image-3.png');
+	background-image: url('./img/image-3.webp');
 }
 
 
 .box:nth-child(4) .rectangle {
-	background-image: url('./img/image-4.png');
+	background-image: url('./img/image-4.webp');
 }
 
 .about-clinique {
