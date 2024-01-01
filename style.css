@@ -291,7 +291,7 @@ header .wrapper {
 .hero-right {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 4vw;
+	grid-gap: 5.5vw;
 
 }
 
